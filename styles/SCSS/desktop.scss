@@ -1,0 +1,120 @@
+@import "variables";
+
+body {
+  font-size: 16px;
+
+  @at-root .header {
+    padding-bottom: 180px;
+
+    @at-root .navbar {
+      height: 180px;
+
+      @at-root .navbar__home {
+        @at-root .navbar__logo {
+          width: 160px;
+        }
+      }
+
+      @at-root .navbar__nav-link {
+        font-size: 1.1em;
+      }
+    }
+
+    @at-root .intro {
+      @at-root .intro__title {
+        font-size: 2.5em;
+      }
+
+      @at-root .intro__desc {
+        font-size: 1.35em;
+        width: 45%;
+      }
+
+      @at-root .intro__cta-button {
+        font-size: 1.2em;
+        width: 300px;
+        height: 60px;
+      }
+    }
+  }
+
+  @at-root .main {
+    @at-root .features {
+      width: 70%;
+      margin-bottom: 120px;
+    }
+
+    @at-root .sub {
+      @at-root .sub__text-section {
+        @at-root .sub__title {
+          font-size: 2.5em;
+        }
+
+        @at-root .sub__desc {
+          font-size: 1.07em;
+        }
+
+        @at-root .sub__link {
+          font-size: 1.07em;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    @at-root .testimonials {
+      background-size: 50px auto;
+      padding: 32px 10px;
+      gap: 40px;
+
+      @at-root .testimonials__list {
+        padding: 40px 30px 30px;
+
+        @at-root .profile {
+          column-gap: 10px;
+        }
+      }
+    }
+
+    @at-root .card {
+      width: 60%;
+      gap: 10px;
+      top: 120px;
+
+      @at-root .card__title {
+        font-size: 2em;
+      }
+
+      @at-root .card__desc {
+        width: 90%;
+      }
+
+      @at-root .card__input-section {
+        @at-root .card__email-submit {
+          width: 320px;
+        }
+      }
+    }
+  }
+
+  @at-root .footer {
+    padding: 200px 6% 50px;
+
+    @at-root .footer__logo {
+      width: 190px;
+    }
+
+    @at-root .footer__grid {
+      gap: 20px;
+      grid-template-columns: 5fr 3.5fr 1fr;
+      margin-bottom: 70px;
+
+      @at-root .footer__contact-section {
+        @at-root .footer__contact-list {
+          @at-root &_location {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}

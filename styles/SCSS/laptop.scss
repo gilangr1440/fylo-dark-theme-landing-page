@@ -1,0 +1,241 @@
+@import "variables";
+
+body {
+  @at-root .header {
+    background-image: url(../../images/bg-curvy-desktop.svg);
+    background-position: bottom 0% left 0;
+    padding-bottom: 100px;
+
+    @at-root .navbar {
+      height: 120px;
+
+      @at-root .navbar__nav-link {
+        font-size: 1em;
+      }
+    }
+
+    @at-root .intro {
+      @at-root .intro__hero-image {
+        width: 50%;
+      }
+
+      @at-root .intro__title {
+        font-size: 2em;
+        width: 50%;
+      }
+
+      @at-root .intro__desc {
+        font-size: 1.2em;
+        width: 45%;
+      }
+
+      @at-root .intro__cta-button {
+        font-size: 1.2em;
+        height: 50px;
+        width: 220px;
+      }
+    }
+  }
+
+  @at-root .main {
+    padding: 0;
+
+    @at-root .features {
+      grid-template-columns: 1fr 1fr;
+      width: 80%;
+      margin: 0 auto 100px;
+
+      @at-root .features__list {
+        gap: 10px;
+
+        @at-root .features__image {
+          height: 80px;
+          width: auto;
+        }
+
+        @at-root .features__title {
+          font-size: 1.3em;
+        }
+
+        @at-root .features__desc {
+          font-size: 1em;
+        }
+      }
+    }
+
+    @at-root .sub {
+      flex-direction: row;
+      width: 90%;
+      margin: auto;
+
+      @at-root .sub__illustration {
+        width: 100%;
+      }
+
+      @at-root .sub__text-section {
+        width: 100%;
+        gap: 15px;
+
+        @at-root .sub__title {
+          font-size: 2em;
+          width: 60%;
+          line-height: 1.3;
+        }
+
+        @at-root .sub__desc {
+          font-size: 1em;
+        }
+
+        @at-root .sub__link {
+          font-size: 1em;
+
+          @at-root .sub__link-icon {
+            width: 18px;
+          }
+        }
+      }
+    }
+
+    @at-root .testimonials {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 25px 10px;
+      background-position: 0 0;
+
+      @at-root .testimonials__list {
+        padding: 30px 20px 25px;
+        box-shadow: 5px 5px 10px 1px rgba($color: $dark-blue-testimonials, $alpha: 0.3);
+
+        @at-root .testimonials__text {
+          font-size: 0.9em;
+        }
+
+        @at-root .profile {
+          row-gap: 0px;
+
+          @at-root .profile__img {
+            width: 30px;
+          }
+
+          @at-root .profile__name {
+            font-size: 0.8em;
+          }
+
+          @at-root .profile__role {
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+
+    @at-root .card {
+      width: 70%;
+      align-items: center;
+      min-height: 220px;
+      top: 100px;
+      padding: 50px 40px 40px 40px;
+
+      @at-root .card__title {
+        font-size: 1.8em;
+      }
+
+      @at-root .card__desc {
+        font-size: 0.9em;
+        width: 80%;
+      }
+
+      @at-root .card__input-section {
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        gap: 30px;
+
+        @at-root .card__email-input {
+          margin: 0;
+          font-size: 0.9em;
+          height: 50px;
+
+          @at-root &::placeholder {
+            font-size: 0.9em;
+          }
+        }
+
+        @at-root .card__email-submit {
+          font-size: 0.9em;
+          height: 50px;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  @at-root .footer {
+    padding: 170px 8% 50px;
+
+    @at-root .footer__logo {
+      width: 150px;
+      margin-left: 0;
+    }
+
+    @at-root .footer__grid {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(3, auto);
+
+      @at-root .footer__contact-section {
+        grid-template-rows: max-content max-content;
+        grid-template-columns: auto auto;
+
+        @at-root .footer__contact-list {
+          align-items: start;
+
+          @at-root .footer__contact-icon {
+            height: 20px;
+          }
+
+          @at-root .footer__contact-text {
+            font-size: 1em;
+          }
+
+          @at-root &_location {
+            grid-row: 1/3;
+            grid-column: 1/2;
+          }
+
+          @at-root &_phone {
+            grid-row: 1/2;
+            grid-column: 2/3;
+          }
+
+          @at-root &_email {
+            grid-row: 2/3;
+            grid-column: 2/3;
+          }
+        }
+      }
+
+      @at-root .footer__navs {
+        flex-direction: row;
+
+        @at-root .footer__nav-lists {
+          @at-root .footer__nav-link {
+            font-size: 1em;
+          }
+        }
+      }
+
+      @at-root .footer__social-lists {
+        gap: 10px;
+
+        @at-root .footer__social-link {
+          width: 30px;
+          height: 30px;
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    @at-root .attribution {
+      font-size: 1em;
+    }
+  }
+}

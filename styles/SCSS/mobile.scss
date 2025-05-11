@@ -1,0 +1,486 @@
+@import "variables";
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 14px;
+  max-width: 100vw;
+  // width: 100vw;
+  background-color: $dark-blue-main;
+
+  @at-root .header {
+    background-color: $dark-blue-intro;
+    padding-bottom: 20px;
+    background-image: url(../../images/bg-curvy-mobile.svg), linear-gradient(to top, $dark-blue-main 30%, $dark-blue-intro 30%, $dark-blue-intro 70%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom 37% left 0;
+
+    @at-root .navbar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 80px;
+      padding: 0 5%;
+
+      @at-root .navbar__home {
+        flex-grow: 1;
+
+        @at-root .navbar__logo {
+          width: 100px;
+        }
+      }
+
+      @at-root .navbar__nav-link {
+        font-family: $raleway;
+        font-size: 0.9em;
+        color: $white;
+        text-decoration: none;
+
+        @at-root &:hover {
+          text-decoration: underline;
+          font-weight: 700;
+        }
+      }
+    }
+
+    @at-root .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+
+      @at-root .intro__hero-image {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      @at-root .intro__title {
+        font-family: $raleway;
+        color: $white;
+        font-size: 1.8em;
+        text-align: center;
+        line-height: 1.5;
+        width: 90%;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      @at-root .intro__desc {
+        font-size: 1em;
+        color: $white;
+        font-family: $open-sans;
+        text-align: center;
+        line-height: 1.5;
+        width: 85%;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+
+      @at-root .intro__cta-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+        background-image: linear-gradient(to right, $cyan, $blue);
+        text-decoration: none;
+        font-family: $raleway;
+        font-size: 1.1em;
+        color: $white;
+        border-radius: 50px;
+        font-weight: 700;
+
+        @at-root &:hover {
+          cursor: pointer;
+          background-image: linear-gradient(to right, lighten($cyan, 5), lighten($cyan, 5));
+        }
+      }
+    }
+  }
+
+  @at-root .main {
+    background-color: $dark-blue-main;
+    padding: 100px 0 0px;
+
+    @at-root .features {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 90px;
+      margin-bottom: 100px;
+
+      @at-root .features__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        width: 85%;
+        justify-self: center;
+
+        @at-root .features__image {
+          width: 20%;
+          margin-bottom: 30px;
+        }
+
+        @at-root .features__title {
+          font-family: $raleway;
+          color: $white;
+          font-size: 1.3em;
+          text-align: center;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+
+        @at-root .features__desc {
+          font-family: $open-sans;
+          color: $white;
+          text-align: center;
+          font-size: 1em;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    @at-root .sub {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+
+      @at-root .sub__illustration {
+        width: 80%;
+      }
+
+      @at-root .sub__text-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 85%;
+
+        @at-root .sub__title {
+          font-family: $raleway;
+          font-size: 1.3em;
+          color: $white;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+
+        @at-root .sub__desc {
+          font-family: $open-sans;
+          font-size: 1em;
+          color: $white;
+          line-height: 1.5;
+        }
+
+        @at-root .sub__link {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 1em;
+          text-decoration: none;
+          color: $cyan;
+          font-family: $open-sans;
+          border-bottom: 1px solid $cyan;
+          padding-bottom: 5px;
+          width: fit-content;
+
+          @at-root .sub__link-font-icon {
+            color: $dark-blue-main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: $cyan;
+            font-size: 10px;
+          }
+
+          @at-root &:hover {
+            color: $white;
+            border-color: $white;
+
+            .sub__link-font-icon {
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    @at-root .testimonials {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-auto-flow: column;
+      gap: 30px;
+      width: 80%;
+      margin: 150px auto 0px;
+      padding: 25px 0;
+      background-image: url(../../images/bg-quotes.png);
+      background-repeat: no-repeat;
+      background-size: 30px auto;
+      background-position: 10px 0;
+
+      @at-root .testimonials__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background: $dark-blue-testimonials;
+        padding: 30px 20px 25px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px 0px rgba($color: #000000, $alpha: 0.3);
+
+        @at-root .testimonials__text {
+          font-family: $open-sans;
+          font-size: 0.9em;
+          color: $white;
+          line-height: 1.7;
+          font-weight: 300;
+          letter-spacing: 0.2px;
+        }
+
+        @at-root .profile {
+          display: grid;
+          grid-template-columns: max-content auto;
+          grid-template-rows: repeat(2, auto);
+          align-items: center;
+          column-gap: 15px;
+          row-gap: 5px;
+
+          @at-root .profile__img {
+            grid-row: 1/3;
+            grid-column: 1/2;
+            border-radius: 50%;
+            width: 40px;
+          }
+
+          @at-root .profile__name {
+            grid-row: 1/2;
+            grid-column: 2/3;
+            font-family: $open-sans;
+            font-size: 1em;
+            color: $white;
+            font-weight: 700;
+            letter-spacing: 1px;
+          }
+
+          @at-root .profile__role {
+            grid-row: 2/3;
+            grid-column: 2/3;
+            font-family: $open-sans;
+            font-size: 0.8em;
+            color: $white;
+            font-weight: 300;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    @at-root .card {
+      width: 90%;
+      margin: auto;
+      background: $dark-blue-intro;
+      padding: 25px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: 0 8px 10px 0px rgba($color: #000000, $alpha: 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 380px;
+      position: relative;
+      // top: 30vh;
+      top: 210px;
+
+      @at-root .card__title {
+        font-family: $raleway;
+        color: $white;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.4em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      @at-root .card__desc {
+        font-family: $open-sans;
+        color: $white;
+        font-weight: 300;
+        font-size: 1em;
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        margin-bottom: 30px;
+      }
+
+      @at-root .card__input-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @at-root .card__email-validation {
+          width: 100%;
+          position: relative;
+
+          @at-root .card__email-input {
+            width: 100%;
+            padding: 0 30px;
+            height: 55px;
+            font-family: $open-sans;
+            color: $dark-blue-main;
+            font-size: 0.9em;
+            border-radius: 100px;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            margin-bottom: 25px;
+
+            @at-root .card__email-input::placeholder {
+              font-family: $open-sans;
+              font-size: 0.9em;
+              color: rgba($color: $dark-blue-main, $alpha: 0.3);
+            }
+
+            @at-root .card__email-input:focus {
+              outline: none;
+            }
+          }
+
+          @at-root .card__error-text {
+            display: none;
+          }
+
+          @at-root .card__error-text.show {
+            display: block;
+            position: absolute;
+            inset: calc(100% + 5px) 30px;
+            font-family: $open-sans;
+            color: $light-red;
+            font-size: 0.8em;
+          }
+        }
+
+        @at-root .card__email-submit {
+          width: 100%;
+          height: 55px;
+          background: linear-gradient(to right, $cyan, $blue);
+          font-family: $raleway;
+          color: $white;
+          font-size: 1em;
+          font-weight: 700;
+          border-radius: 100px;
+          border: none;
+
+          @at-root &:hover {
+            cursor: pointer;
+            background: linear-gradient(to right, lighten($cyan, 5), lighten($cyan, 5));
+          }
+        }
+      }
+    }
+  }
+
+  @at-root .footer {
+    background: $dark-blue-footer;
+    padding: 270px 8% 50px;
+
+    @at-root .footer__logo {
+      margin: 0 0 30px 15px;
+      width: 170px;
+    }
+
+    @at-root .footer__grid {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      gap: 50px;
+      margin-bottom: 30px;
+
+      @at-root .footer__contact-section {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+
+        @at-root .footer__contact-list {
+          display: grid;
+          grid-template-columns: 25px auto;
+          gap: 10px;
+          align-items: center;
+
+          @at-root .footer__contact-icon {
+            height: 15px;
+
+            @at-root .footer__contact-icon_align-top {
+              align-self: self-start;
+            }
+          }
+
+          @at-root .footer__contact-text {
+            font-family: $open-sans;
+            font-size: 1em;
+            color: $white;
+
+            @at-root .footer__contact-text_address {
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+
+      @at-root .footer__navs {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @at-root .footer__nav-lists {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          @at-root .footer__nav-link {
+            font-family: $open-sans;
+            color: $white;
+            text-decoration: none;
+
+            @at-root &:hover {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      @at-root .footer__social-lists {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        @at-root .footer__social-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $white;
+          text-decoration: none;
+          border: 1px solid $white;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+
+          @at-root &:hover {
+            color: $cyan;
+            border-color: $cyan;
+          }
+        }
+      }
+    }
+
+    @at-root .attribution {
+      font-family: $open-sans;
+      font-size: 1em;
+      color: $white;
+    }
+  }
+}

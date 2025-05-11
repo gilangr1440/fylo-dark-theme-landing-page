@@ -1,0 +1,177 @@
+@import "variables";
+
+body {
+  @at-root .header {
+    background-image: url(../../images/bg-curvy-mobile.svg), linear-gradient(to top, $dark-blue-main 11%, $dark-blue-intro 11%, $dark-blue-intro 70%);
+    background-position: bottom 15% left 0;
+
+    @at-root .navbar {
+      height: 100px;
+      gap: 50px;
+
+      @at-root .navbar__home {
+        @at-root .navbar__logo {
+          width: 120px;
+        }
+      }
+
+      @at-root .navbar__nav-link {
+        font-size: 1.4em;
+      }
+    }
+
+    @at-root .intro {
+      gap: 25px;
+
+      @at-root .intro__title {
+        font-size: 3em;
+        font-weight: 700;
+      }
+
+      @at-root .intro__desc {
+        font-size: 1.4em;
+      }
+
+      @at-root .intro__cta-button {
+        width: 290px;
+        height: 70px;
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  @at-root .main {
+    @at-root .features {
+      @at-root .features__list {
+        gap: 20px;
+
+        @at-root .features__title {
+          font-size: 2.5em;
+        }
+
+        @at-root .features__desc {
+          font-size: 1.4em;
+        }
+      }
+    }
+
+    @at-root .sub {
+      @at-root .sub__illustration {
+        width: unset;
+      }
+
+      @at-root .sub__text-section {
+        gap: 25px;
+
+        @at-root .sub__title {
+          font-size: 2.5em;
+        }
+
+        @at-root .sub__desc {
+          font-size: 1.4em;
+        }
+
+        @at-root .sub__link {
+          font-size: 1.3em;
+
+          @at-root .sub__link-icon {
+            width: 25px;
+          }
+        }
+      }
+    }
+
+    @at-root .testimonials {
+      background-size: 40px auto;
+      padding: 35px 0;
+
+      @at-root .testimonials__list {
+        padding: 40px 40px 35px;
+
+        @at-root .testimonials__text {
+          font-size: 1.4em;
+        }
+
+        @at-root .profile {
+          row-gap: 10px;
+
+          @at-root .profile__img {
+            width: 55px;
+          }
+
+          @at-root .profile__name {
+            font-size: 1.5em;
+          }
+
+          @at-root .profile__role {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    @at-root .card {
+      padding: 40px;
+
+      @at-root .card__title {
+        font-size: 2.5em;
+      }
+
+      @at-root .card__desc {
+        font-size: 1.4em;
+      }
+
+      @at-root .card__input-section {
+        @at-root .card__email-input {
+          font-size: 1.4em;
+          height: 70px;
+        }
+
+        @at-root .card__email-submit {
+          font-size: 1.4em;
+          height: 70px;
+        }
+      }
+    }
+  }
+
+  @at-root .footer {
+    @at-root .footer__logo {
+      width: 200px;
+    }
+
+    @at-root .footer__grid {
+      @at-root .footer__contact-section {
+        @at-root .footer__contact-list {
+          gap: 20px;
+
+          @at-root .footer__contact-icon {
+            height: 25px;
+          }
+
+          @at-root .footer__contact-text {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      @at-root .footer__navs {
+        @at-root .footer__nav-lists {
+          @at-root .footer__nav-link {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      @at-root .footer__social-lists {
+        gap: 20px;
+
+        @at-root .footer__social-link {
+          width: 40px;
+          height: 40px;
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}

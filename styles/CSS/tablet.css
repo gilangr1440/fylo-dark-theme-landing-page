@@ -1,0 +1,141 @@
+.header {
+  background-image: url(../../images/bg-curvy-mobile.svg), linear-gradient(to top, hsl(218, 28%, 13%) 11%, hsl(217, 28%, 15%) 11%, hsl(217, 28%, 15%) 70%);
+  background-position: bottom 15% left 0;
+}
+.navbar {
+  height: 100px;
+  gap: 50px;
+}
+.navbar__logo {
+  width: 120px;
+}
+
+.navbar__nav-link {
+  font-size: 1.4em;
+}
+
+.intro {
+  gap: 25px;
+}
+.intro__title {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.intro__desc {
+  font-size: 1.4em;
+}
+
+.intro__cta-button {
+  width: 290px;
+  height: 70px;
+  font-size: 1.4em;
+}
+
+.features__list {
+  gap: 20px;
+}
+.features__title {
+  font-size: 2.5em;
+}
+
+.features__desc {
+  font-size: 1.4em;
+}
+
+.sub__illustration {
+  width: unset;
+}
+
+.sub__text-section {
+  gap: 25px;
+}
+.sub__title {
+  font-size: 2.5em;
+}
+
+.sub__desc {
+  font-size: 1.4em;
+}
+
+.sub__link {
+  font-size: 1.3em;
+}
+.sub__link-icon {
+  width: 25px;
+}
+
+.testimonials {
+  background-size: 40px auto;
+  padding: 35px 0;
+}
+.testimonials__list {
+  padding: 40px 40px 35px;
+}
+.testimonials__text {
+  font-size: 1.4em;
+}
+
+.profile {
+  row-gap: 10px;
+}
+.profile__img {
+  width: 55px;
+}
+
+.profile__name {
+  font-size: 1.5em;
+}
+
+.profile__role {
+  font-size: 1.2em;
+}
+
+.card {
+  padding: 40px;
+}
+.card__title {
+  font-size: 2.5em;
+}
+
+.card__desc {
+  font-size: 1.4em;
+}
+
+.card__email-input {
+  font-size: 1.4em;
+  height: 70px;
+}
+
+.card__email-submit {
+  font-size: 1.4em;
+  height: 70px;
+}
+
+.footer__logo {
+  width: 200px;
+}
+
+.footer__contact-list {
+  gap: 20px;
+}
+.footer__contact-icon {
+  height: 25px;
+}
+
+.footer__contact-text {
+  font-size: 1.4em;
+}
+
+.footer__nav-link {
+  font-size: 1.4em;
+}
+
+.footer__social-lists {
+  gap: 20px;
+}
+.footer__social-link {
+  width: 40px;
+  height: 40px;
+  font-size: 1.3em;
+}/*# sourceMappingURL=tablet.css.map */

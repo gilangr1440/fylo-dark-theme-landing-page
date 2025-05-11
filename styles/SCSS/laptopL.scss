@@ -1,0 +1,78 @@
+@import "variables";
+
+body {
+  @at-root .header {
+    padding-bottom: 150px;
+
+    @at-root .navbar {
+      height: 150px;
+
+      @at-root .navbar__home {
+        @at-root .navbar__logo {
+          width: 140px;
+        }
+      }
+    }
+
+    @at-root .intro {
+      @at-root .intro__title {
+        font-size: 2.2em;
+      }
+
+      @at-root .intro__desc {
+        width: 40%;
+        margin-bottom: 0;
+      }
+
+      @at-root .intro__cta-button {
+        font-size: 1em;
+        width: 240px;
+      }
+    }
+  }
+
+  @at-root .main {
+    @at-root .features {
+      width: 75%;
+    }
+
+    @at-root .sub {
+      width: 85%;
+
+      @at-root .sub__text-section {
+        @at-root .sub__title {
+          font-size: 2.2em;
+        }
+      }
+    }
+
+    @at-root .testimonials {
+      margin-bottom: 70px;
+    }
+  }
+
+  @at-root .footer {
+    @at-root .footer__grid {
+      grid-template-columns: 3fr 1.7fr 1fr;
+
+      @at-root .footer__contact-section {
+        column-gap: 20px;
+
+        @at-root .footer__contact-list {
+          @at-root &_location {
+            width: 95%;
+          }
+        }
+      }
+
+      @at-root .footer__navs {
+        justify-content: center;
+        gap: 70px;
+      }
+
+      @at-root .footer__social-lists {
+        justify-content: end;
+      }
+    }
+  }
+}
