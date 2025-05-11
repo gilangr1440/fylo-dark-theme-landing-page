@@ -305,6 +305,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 25px;
 }
 .card__email-validation {
   width: 100%;
@@ -321,7 +322,6 @@ body {
   box-sizing: border-box;
   border: none;
   outline: none;
-  margin-bottom: 25px;
 }
 .card__email-input::-moz-placeholder {
   font-family: "Open Sans", sans-serif;
